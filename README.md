@@ -1,7 +1,7 @@
 # commerce-js
 
 ## checkout page
-Example: [https://checkout.chec.io/examplecheckout] (https://checkout.chec.io/examplecheckout)
+Example: [https://checkout.chec.io/examplecheckout](https://checkout.chec.io/examplecheckout)
 
 # Tailwind Css
 We use Tailwind CSS framework in this project.
