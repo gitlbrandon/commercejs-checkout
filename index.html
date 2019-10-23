@@ -3,13 +3,37 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = no, width = device-width">
 
     <!-- CSS -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="styles/custom.css" rel="stylesheet">
 
     <title>commerce.js checkout example</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+
+  <body id="hosted-checkout" class="py-0 px-4 sm:p-12">
+    <div id="product-display" class="animated fadeIn w-full relative mx-auto">
+        <div class="media w-full bg-white mx-auto relative overflow-hidden " data-type="image">
+            <img data-adaptive-background="" crossorigin="anonymous" class="cover-photo w-full mx-auto overflow-hidden" src="https://i.embed.ly/1/display/resize?key=fab0b4012302409abb914cfc88c62f73&amp;url=https://chec.nyc3.cdn.digitaloceanspaces.com/merchants/7127/images/54bf5cc4e0c0cd4677ba31d0cc54f617a7dcd4d95dae38d5b8010|pruple.png&amp;width=680&amp;grow=false">
+        </div>
+        <div class="about w-full bg-white my-4 mx-auto">
+            <h1 class="product-title text-xl font-normal text-center my-1 mx-auto">Example Resource Checkout  - <span class="product-price">$100.00</span></h1>
+            <h3 class="by text-base font-light text-center mx-auto ">By Spaces by Chec</h3>
+            <div class="product-description border-t border-solid">
+                <p>Example</p>
+            </div>
+            <div class="go-to-checkout text-center border-t border-solid">
+                <button class="buynow text-base font-normal text-white border border-solid" type="button" onclick="Checkout.showCheckout();"><i class="fa fa-lock mr-2"></i> <b>Buy Now</b>  - $100.00 </button>
+                <span class="secured mx-auto pt-4 block">All transactions are safe &amp; secured by 256 bit AES encryption.</span>
+            </div>
+        </div>
+        <div class="powered-by-chec w-full mx-auto text-center px-0 py-6">
+            <a class="no-underline bg-transparent" href="https://trychec.com?source=checkout-v1" target="blank" alt="Chec - Sell anything, anywhere.">
+              <img class="mx-auto border-none my-1" src="assets/images/powered.by.dark.png" width="182">
+              </a>
+            </div>
+        </div>
   </body>
 </html>

@@ -1,0 +1,115 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: always;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    color: #9DAABB;
+    border: 1px solid #9DAABB;
+    font-weight: 300;
+    border-radius: 3px;
+    padding: 15px 35px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+body {
+    font-family: Open Sans, Lucida Grande, Lucida Sans Unicode, Veranda, Arial, sans-serif;
+    background-color: #f9fafb;
+    background-image: -webkit-linear-gradient(-90deg, #f9fafb 0%, #f5f8fa 50%);
+    background-image: linear-gradient(-180deg,#f9fafb 0%, #f5f8fa 50%);
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-size: cover;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+#product-display {
+    max-width: 640px;
+}
+
+#product-display .media[data-type="image"] {
+    box-sizing: content-box;
+}
+
+#product-display .media {
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#product-display .media img {
+    max-width: 680px;
+}
+
+#product-display .about {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    color: #6C7C90;
+    border-radius: 3px;
+}
+
+#product-display .about h1.product-title {
+    color: #566373;
+    padding: 35px 35px 0px;
+}
+
+#product-display .about h1.product-title .product-price {
+    color: #69b67c;
+}
+
+#product-display .about h3.by {
+    color: #8996a6;
+    padding: 0px 35px 35px;
+}
+
+#product-display .about .product-description {
+    font-size: 14px;
+    line-height: 26px;
+    padding: 25px 75px;
+    background: rgba(108, 124, 144, 0.025);
+    border-color: rgba(108, 124, 144, 0.1);
+}
+
+#product-display .about .go-to-checkout {
+    font-size: 14px;
+    line-height: 26px;
+    padding: 35px 75px;
+    border-color: rgba(108, 124, 144, 0.1);
+}
+
+button.buynow {
+    border-color: #8BC79A;
+    background: #8BC79A;
+}
+
+#product-display .about .go-to-checkout .secured {
+    max-width: 250px;
+    opacity: 0.6;
+    font-size: 13px;
+    line-height: 20px;
+}
